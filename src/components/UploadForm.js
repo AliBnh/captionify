@@ -10,8 +10,8 @@ export default function(){
 
     async function upload(e){
         e.preventDefault();
+        let count = localStorage.getItem('transcriptionCount'); 
         if(localStorage.getItem('paidUser')==='false' && localStorage.getItem('transcriptionCount') < 10){
-            let count = localStorage.getItem('transcriptionCount'); 
             if (!count) {
                 count = 0;
             }
