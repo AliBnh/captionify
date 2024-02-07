@@ -5,7 +5,7 @@ export default function PricingPage(){
     const makePayment = async (event)=>{
         event.preventDefault();
         localStorage.setItem('paidUser', 'true');
-        const stripe = await loadStripe("pk_test_51OhG8vCDQGH9qTAvkSiyDatoWgaTxAPlcjx68bV8PAZKpRIodjZ89tMUfjQWrlMCgGoYnFhNPL0ltnRVGm8FhIZ000zL7ZNX04");
+        const stripe = await loadStripe("key");
         const body = {
             amount: 29
                 }
