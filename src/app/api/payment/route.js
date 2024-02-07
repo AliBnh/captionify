@@ -1,4 +1,4 @@
-const stripe = require('stripe')("sk_test_51OhG8vCDQGH9qTAvml4xFFTcLfwDqt5IKjqLHKArtniKB37iRpjfJCk8K9KPltHJegFKitfWqhCUnhYZDQ6WIrZk00nNaJLfRo");
+const stripe = require('stripe')("key");
 export  async function POST(req){
     const amount = 29*100;
 
