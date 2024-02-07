@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CAPTIONIFY
 
-## Getting Started
+## Table of Contents
+- [Introduction](#Introduction)
+- [Features](#Features)
+- [Screenshots](#Screenshots)
+- [Technologies Used](#Technologies-used)
+- [Installation](#Installation)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Introduction
+Welcome to the Video Transcription and Captioning App! This application allows users to upload videos, automatically transcribe the audio content, add captions, and download the finalized videos. It offers both free and paid subscription plans, enabling users to transcribe and caption a limited number of videos for free or enjoy unlimited usage with the paid plan.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
+- Video Upload: Users can upload videos to the platform.
+- Automatic Transcription: The application utilizes AWS Transcribe to transcribe the audio content of uploaded videos into text.
+- Caption Editing: Users have the option to edit the transcribed text to ensure accurate captions.
+- Caption Generation: Captions are overlaid onto the original videos using FFmpeg to generate final videos with captions.
+- Subscription Plans: Offers both free and paid subscription plans with different usage limits.
+- Stripe Integration: Seamless payment processing and subscription management through Stripe.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Screenshots
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologies Used
+- Next.js
+- React.js
+- Tailwind CSS
+- AWS S3
+- AWS Transcribe
+- FFmpeg
+- Stripe
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+### Clone the repository:
+- git clone https://github.com/yourusername/your-repository.git
+### Install dependencies:
+- npm install
+### Create a .env file in the root directory and add your keys.
+- Set up AWS credentials and configure Stripe API keys.
+### Start the development server:
+- npm run dev
+### Access the application at http://localhost:3000.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions are welcome! 

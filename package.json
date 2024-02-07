@@ -9,15 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.507.0",
+    "@aws-sdk/client-transcribe": "^3.507.0",
+    "@ffmpeg/ffmpeg": "^0.12.6",
+    "@ffmpeg/util": "^0.12.1",
+    "@stripe/stripe-js": "^2.4.0",
+    "aws-crt": "^1.21.0",
+    "axios": "^1.6.7",
+    "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "next": "latest"
+    "stripe": "^14.15.0",
+    "uniqid": "^5.4.0"
   },
   "devDependencies": {
     "autoprefixer": "latest",
-    "postcss": "latest",
-    "tailwindcss": "latest",
     "eslint": "latest",
-    "eslint-config-next": "latest"
+    "eslint-config-next": "latest",
+    "file-loader": "^6.2.0",
+    "postcss": "latest",
+    "tailwindcss": "latest"
   }
 }
